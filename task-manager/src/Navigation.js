@@ -9,4 +9,8 @@ const Navigation = () => {
             <li><a href='/contact'>Contact</a></li>
 
         </ul>
+  ) ;
+}
+
+export default Navigation;
 
