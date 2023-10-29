@@ -50,6 +50,15 @@ function Task(){
             <div className='col taskBg'> 
             <span className ="taskNumber">{index + 1}</span>
             <span className ="taskTest">{task.title}</span>  
+            <div className='iconsWrap'>y
+            <label>
+                Complete?
+                <input type="checkbox" 
+                onChange={(e) => statusTask(task.id, e.target.checked)}
+                className="check"  checked={task.completed}/>
+               </label>
+
+            </div>
             
             </div>
             
