@@ -6,6 +6,12 @@ import {  faPen, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 
 function Task(){
+
+    //initialize the state
+  const [toDo , setToDo] =useState([
+    {"id":1 , "title": "Task 1" , "completed": false},
+    {"id":2 , "title": "Task 2" , "completed": false}
+  ]);
     return(
         <div className="container App">
             <h1>TO-DO list</h1>
