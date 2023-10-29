@@ -6,6 +6,15 @@ import {  faPen, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 
 function Task(){
+    return(
+        <div className="container App">
+            <h1>TO-DO list</h1>
+            
+
+
+        </div>
+
+    )
 
 }
 
