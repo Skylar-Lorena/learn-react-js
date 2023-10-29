@@ -57,4 +57,10 @@
   border-radius: 5px;
 }
 
+.buttons{
+  background-color: rgb(165, 134, 92);
+  min-width: 100px;
+}
+
+
 
