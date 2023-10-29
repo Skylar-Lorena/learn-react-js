@@ -39,3 +39,13 @@
   justify-content: center;
 }
 
+.iconsWrap{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
+
+}
+
