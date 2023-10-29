@@ -70,11 +70,13 @@ function Task(){
      <div className='row'> 
       <div className='col'>
         <input
-           type="text"
+          type="text"
+          value={ updateData && updateData.title}
+          onChange={(e) => changetask(e)}//function called when the input field changes
           className='form-add'/>
       </div>
       <div className='col-auto'> 
-        <button> 
+        <button onClick={update} className='buttons'> 
           Update
         </button>
       </div>
