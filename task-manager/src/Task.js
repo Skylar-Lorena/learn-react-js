@@ -73,7 +73,7 @@ function Task(){
                 className="check"  checked={task.completed}/>
             </label>
             {/* span for delete task */}
-            <span title='delete'>
+            <span title='delete' onClick={() => deleteTask(task.id)}>
               <FontAwesomeIcon icon={faTrashCan}/>
               </span>
 
