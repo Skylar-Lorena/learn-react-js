@@ -13,6 +13,16 @@ function Task(){
     {"id":2 , "title": "Task 2" , "completed": false}
   ]);
 
+  // function to add task
+  const addTask =()=> {
+    if(newTask){
+      let num = toDo.length +1;//calculates the new id for the task to be added
+      let newEntry = { id:num, title: newTask}// new task entered is created as an object
+      setToDo([...toDo, newEntry])//create a new array by copying the toDo and appending newEntry at the end
+      setNewTask('')//clear input field
+    }
+  } 
+
     return(
         <div className="container App">
             <h1>TO-DO list</h1>
