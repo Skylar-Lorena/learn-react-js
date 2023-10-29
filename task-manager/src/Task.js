@@ -7,7 +7,7 @@ import {  faPen, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 function Task(){
 
-    //initialize the state
+    //initialize the use state
   const [toDo , setToDo] =useState([
     {"id":1 , "title": "Task 1" , "completed": false},
     {"id":2 , "title": "Task 2" , "completed": false}
