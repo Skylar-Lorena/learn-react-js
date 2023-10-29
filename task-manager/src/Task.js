@@ -107,6 +107,15 @@ function Task(){
                 onChange={(e) => statusTask(task.id, e.target.checked)}
                 className="check"  checked={task.completed}/>
             </label>
+
+            {/* span for edit task */}
+            <span title='edit' onClick={() => setUpdate({
+                id: task.id,
+                title: task.title,
+                 })}>
+                <FontAwesomeIcon icon={faPen}/>
+              </span>
+              
             {/* span for delete task */}
             <span title='delete' onClick={() => deleteTask(task.id)}>
               <FontAwesomeIcon icon={faTrashCan}/>
