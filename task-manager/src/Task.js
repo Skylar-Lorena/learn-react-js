@@ -64,6 +64,31 @@ function Task(){
         </button>
       </div>
      </div>
+
+     {/* update task */}
+
+     <div className='row'> 
+      <div className='col'>
+        <input
+           type="text"
+          className='form-add'/>
+      </div>
+      <div className='col-auto'> 
+        <button> 
+          Update
+        </button>
+      </div>
+     </div>
+ 
+     <br></br>
+
+
+
+
+
+
+
+
             {/* display Todos */}
             {toDo
        .map((task,index) =>{
