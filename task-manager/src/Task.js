@@ -12,6 +12,7 @@ function Task(){
     {"id":1 , "title": "Task 1" , "completed": false},
     {"id":2 , "title": "Task 2" , "completed": false}
   ]);
+
     return(
         <div className="container App">
             <h1>TO-DO list</h1>
@@ -30,7 +31,22 @@ function Task(){
         </button>
       </div>
      </div>
+            {/* display Todos */}
+            {toDo
+       .map((task,index) =>{
+        return(
+          <React.Fragment key={task.id}>
+
+            <div className='col taskBg'> 
+            <span className ="taskNumber">{index + 1}</span>
+            <span className ="taskTest">{task.title}</span>  
             
+            </div>
+            
+          </React.Fragment>
+        )
+       })
+       }
             
 
 
