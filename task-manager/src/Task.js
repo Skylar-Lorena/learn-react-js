@@ -58,6 +58,14 @@ function Task(){
      setUpdate(newEntry);//setupdate fuction is updated with the new object
      }
 
+     //update values
+   const update =() =>{
+    let filterRecords = [...toDo].filter(task => task.id !== updateData.id)// new array copying the existing to-do list and filters out the task
+    let updatedObject = [...filterRecords, updateData] //copying all and appends the updated data
+    setToDo(updatedObject);
+    setUpdate('');
+   }
+
 
     return(
         <div className="container App">
