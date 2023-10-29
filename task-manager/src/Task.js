@@ -85,6 +85,7 @@ function Task(){
         </button>
       </div>
      </div>
+     <br></br>
 
      {/* update task */}
 
