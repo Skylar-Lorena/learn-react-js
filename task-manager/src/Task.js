@@ -12,6 +12,7 @@ function Task(){
     {"id":1 , "title": "Task 1" , "completed": false},
     {"id":2 , "title": "Task 2" , "completed": false}
   ]);
+  const[newTask, setNewTask] = useState('');
 
   // function to add task
   const addTask =()=> {
