@@ -9,4 +9,19 @@
   height: 500px;
   margin: auto;
 }
+.taskBg{
+  background-color: rgb(39, 36, 32);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 10px 140px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
+  color: aliceblue;
+
+}
+.taskBg div{
+  display: flex;
+  align-items: center;
+}
 
