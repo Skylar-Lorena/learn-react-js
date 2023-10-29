@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react"; // import react library and the usestate from react package
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './App.css';
@@ -10,7 +10,7 @@ function Task(){
         <div className="container App">
             <h1>TO-DO list</h1>
 
-             {/* add task input text area*/}
+             {/* add task */}
      <div className='row'> 
       <div className='col'>
         <input
