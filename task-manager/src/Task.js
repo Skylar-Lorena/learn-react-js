@@ -23,6 +23,20 @@ function Task(){
     }
   } 
 
+  //function to mark complete to-dos
+  const statusTask=(id,completed)=>{
+    const updatedtask = toDo.map(task => {
+      if(task.id === id){
+        return{
+          ...task,completed}
+      }else {
+        return task
+      }
+    })
+    setToDo(updatedtask)
+   }
+
+
     return(
         <div className="container App">
             <h1>TO-DO list</h1>
@@ -56,7 +70,7 @@ function Task(){
                 <input type="checkbox" 
                 onChange={(e) => statusTask(task.id, e.target.checked)}
                 className="check"  checked={task.completed}/>
-               </label>
+            </label>
 
             </div>
             
