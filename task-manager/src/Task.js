@@ -45,6 +45,19 @@ function Task(){
     
    }
 
+   //function to change value of input field
+   // get value in the update inputtext area
+   // get value from event
+   const changetask =(e)=> {
+    
+    //new object is created
+    let newEntry = {
+      id: updateData.id,
+      title: e.target.value,//captures the new value of the field which the updated task
+      }
+     setUpdate(newEntry);//setupdate fuction is updated with the new object
+     }
+
 
     return(
         <div className="container App">
@@ -115,7 +128,7 @@ function Task(){
                  })}>
                 <FontAwesomeIcon icon={faPen}/>
               </span>
-              
+
             {/* span for delete task */}
             <span title='delete' onClick={() => deleteTask(task.id)}>
               <FontAwesomeIcon icon={faTrashCan}/>
