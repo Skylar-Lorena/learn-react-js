@@ -37,6 +37,13 @@ function Task(){
     setToDo(updatedtask)
    }
 
+   // function to delete task
+  const deleteTask =(id)=> {//use filter method to exclude method with that id
+    let newTask = toDo.filter(task => task.id !== id)
+    setToDo(newTask);
+    
+   }
+
 
     return(
         <div className="container App">
