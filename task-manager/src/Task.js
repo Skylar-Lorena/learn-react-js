@@ -9,6 +9,21 @@ function Task(){
     return(
         <div className="container App">
             <h1>TO-DO list</h1>
+
+             {/* add task input text area*/}
+     <div className='row'> 
+      <div className='col'>
+        <input
+        value={newTask}
+        onChange={(e) => setNewTask(e.target.value)}
+          className='form-add'/>
+      </div>
+      <div className='col-auto'> 
+        <button onClick={addTask} className='buttons'> 
+          Add Task
+        </button>
+      </div>
+     </div>
             
             
 
